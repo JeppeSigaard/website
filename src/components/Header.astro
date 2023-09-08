@@ -1,0 +1,23 @@
+---
+const menuItems = [
+  {
+    title: "hire me",
+    href: "/hire-me",
+  },
+];
+---
+
+<header>
+  <a href="/">Icon</a>
+  <ul>
+    {
+      menuItems.map((item) => (
+        <li>
+          <a title={item.title} href={item.href}>
+            {item.title}
+          </a>
+        </li>
+      ))
+    }
+  </ul>
+</header>
